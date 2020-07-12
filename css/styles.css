@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    margin: auto;
+    padding: 12px;
+}
+
+header, footer, h1, h3 {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    font-size: larger;
+}
+
+h1 span {
+    border-bottom: 5px ridge white;
+    border-radius: 2px;
+    text-shadow: 3px 3px 2px gray;
+}
+
+input {
+    width: 100%;
+    background-color: white;
+    border: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: teal;
+    border-radius: 2px;
+}
+
+button {
+    font-size: 20px;
+    padding: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.heading, footer {
+    padding: 30px 15px;
+    background: green; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom, lightseagreen, seagreen, green); /* Standard syntax */
+}
+
+.sub-heading {
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(190, 248, 246);
+    padding: 10px;
+}
+
+.border {
+    border: 3px solid white;
+}
+
+.border-bottom {
+    border: none;
+    border-bottom: 2px solid cyan;
+}
+
+.round-corner {
+    border-radius: 5px;
+}
+
+.hover-border:hover {
+    border: 3px solid white;
+}
+
+.hover-bg-green:hover {
+    background-color: green;
+    color: white;
+}
+
+.hover-bg-red:hover {
+    background-color: red;
+    color: white;
+}
+
+.resp-image img {
+    width: 100%;
+    border: 2px solid lightgray;
+}
+
+.resp-image img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.container {
+    margin: 15px 0px;
+    padding: 5px 0px;
+}
+
+.panel {
+    position: relative;
+    padding: 10px;
+}
+
+.info {
+    background-color: lightskyblue;
+    color: rgb(0, 44, 85);
+}
+
+.close-btn {
+    font-size: 2em;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin-right: 5px;
+}
+
+.close-btn:hover {
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 0.1em;
+}
+
+.bottom-left {
+    font-size: 2em;
+    background-color: rgba(25,25,25,0.7);
+    color: white;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.padded-container {
+    font-size: 40px;
+    border: 5px outset rgb(0, 220, 200);
+    display: inline-block;
+    padding: 15px;
+}
+
+.center-box {
+    display: block;
+    width: 98%;
+    margin: auto;
+}
+
+.notice-board {
+    border: thin double red;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+#clearStorage {
+    float: right;
+    right: 5px;
+}
+
+.btm-bar-small {
+    border-bottom: 10px solid white;
+}
+
+.choice-form {
+    background-color: teal;
+    background: linear-gradient(to bottom, rgba(0,168,168), rgba(0,190,190), rgba(0,170,170)); /* Standard syntax */
+color: white;
+    box-shadow: 1px 2px 5px 2px rgba(0,0,0,0.5);
+}
+
+.field-wrapper {
+    padding-bottom: 15px;
+}
+
+@media screen and (min-width: 600px) {
+    .row {
+        display: -webkit-flex;
+        display: flex;
+        justify-content: center;
+    }
+    .row-col {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col5 {
+        width: 41.67%;
+    }
+
+    .col7 {
+        width: 58.33%;
+    }
+
+    .col-col {
+        align-self: center;
+    }
+}

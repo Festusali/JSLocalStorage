@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en_us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <title>JavaScript Time Challenge</title>
+    </head>
+    
+    <body>
+        <div class="heading">
+            <header id="pageTitle" class="page-title">
+                <h1>
+                    <span> JavaScript Time Show Challenge </span>
+                </h1>
+            </header>
+            <div class="sub-heading">
+                Implementing JavaScript Timing Fuction and Local Storage
+            </div>
+        </div>
+        <main class="content">
+            <div>
+                <summary class="panel info">
+                    My JavaScript knowledge is nothing to write home about and my next live project will have numerous javascript functionality applied on the frontend. I therefore accepted this challenge to help me on the long run.
+                    <span class="close-btn" onclick="this.parentElement.style.display = 'none';" title="Close">&times;</span>
+                </summary>
+            </div>
+            <div class="container">
+                <p>
+                    Welcome! You're at the right place. I will show you awesome wise quotations to keep you inspired and motivated all through the day whilst ensuring your faith is boosted.
+                </p>
+                <p>
+                    Make your choice below or stick around for some random quotations.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col5 container panel choice-form">
+                    <div class="row-col">
+                        <div class="col-col">
+                            <div class="padded-container text-center">
+                                <time id="showTime" class="center-box"></time>
+                                <span class="timeDesc btm-bar-small">Current Time</span>
+                            </div>
+                        </div>
+                        <div class="col-col">
+                            <div id="notification" class="container panel round-corner notice-board">
+                                Please use the form below to choose preferred quote and period of day.
+                            </div>
+                        </div>
+                    </div>
+                    <form id="choiceForm">
+                        <div class="field-wrapper">
+                            <label for="quoteType">
+                                Choose Quote:
+                            </label>
+                            <input id="quoteType" class="border-bottom" type="text" list="quotes" placeholder="Select preferred quote...">
+                            <datalist id="quotes">
+                                <option value="Motivational">
+                                <option value="Wise">
+                                <option value="Faithful">
+                            </datalist>
+                        </div>
+                        <div class="field-wrapper">
+                            <label for="period">
+                                Choose Period:
+                            </label>
+                            <input id="period" class="border-bottom" type="text" list="periods" placeholder="Select time of the day...">
+                            <datalist id="periods">
+                                <option value="Morning">
+                                <option value="Afternoon">
+                                <option value="Night">
+                            </datalist>
+                        </div>
+                        <button type="submit" id="addToStorage" class="hover-border border round-corner hover-bg-green" onclick="processChoice()">
+                            Save Choice
+                        </button>
+                        <button type="submit" id="clearStorage" class="hover-border border round-corner hover-bg-red" onclick="clearLocal()">
+                            Clear Choice
+                        </button>
+                    </form>
+                </div>
+                <div class="col7 container">
+                    <div id="showActivity" class="panel resp-image">
+                        <img id="displayImage" src="images/random.jpg" alt="A random quote">
+                        <div id="descText" class="bottom-left">
+                            <!--My Normal Day-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            &copy; <span id="year"></span>, Festus Ali. Some rights reserved.
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
